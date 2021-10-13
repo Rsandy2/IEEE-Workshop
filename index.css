@@ -1,0 +1,102 @@
+/* The purpose of index.css is to store any variables or styling options for later usage. All webpage styles can be found in ./styles.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+:root {
+  /*--------------- Color Themes ---------------*/
+
+  --black: #160706;
+  --light-black: #17181b;
+  --alternate: #17141d;
+  --gray-svg: #837e7d;
+  --white: #f9f6f5;
+  --light-white: #f7f8fc;
+  --contrast-white: #f2f3f4;
+
+  --red: #982505;
+  --pink-red: #f5918f;
+  --light-red: #d55c5a;
+  --dark-red: #894242;
+
+  --pink: #e52e71;
+  --pole-black: #040507;
+  --black-gravel: #243956;
+  --gravel-white: #070b0e;
+
+  --border-line: #ecf2ff;
+
+  --shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  --shadow-def-normal: 0 4px 5px rgba(0, 0, 0, 0.2);
+
+  /*--------------- Font Details ---------------*/
+
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  /*--------------- Size Details ---------------*/
+
+  --navigation-bar: 76px;
+  --navigation-spacing: 44px;
+
+  --navigation-max-height: 100px;
+  --navigation-min-height: 76px;
+  --navigation-height-difference: calc(
+    var(--navigation-max-height) - var(--navigation-min-height)
+  );
+
+  --font-size-small-one: 0.25rem;
+  --font-size-small-two: 0.5rem;
+  --font-size-small-three: 0.75rem;
+
+  --font-size-medium-one: 1rem;
+  --font-size-medium-two: 1.25rem;
+  --font-size-medium-three: 1.5rem;
+}
+
+/*--------------- Offsets ---------------*/
+
+a,
+ul,
+li,
+div,
+p,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  /* background-color: var(--alternate); */
+  /* background-image: url(./blurry-gradient-haikei.svg); */
+  /* background: url(./stacked-peaks-haikei.svg); */
+  background: linear-gradient(0deg, var(--light-red), var(--black-gravel));
+
+  height: 100vh;
+
+  /* background-size: cover; */
+  color: var(--light-white);
+  line-height: 1.5;
+  overflow: hidden;
+}
